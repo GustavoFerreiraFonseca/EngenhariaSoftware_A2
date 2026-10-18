@@ -1,4 +1,4 @@
-A2-Parte 2 - Engenharia de Software
+A2-Parte 2 - Engenharia de Software - Prof Luiz Rodrigues
 Gustavo Ferreira da Fonseca - 2669510
 Gustavo Henrique Gonçalves - 2669528
 
