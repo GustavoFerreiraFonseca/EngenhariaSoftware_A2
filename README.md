@@ -59,5 +59,23 @@ Critério de Aceitação 5:
 
 
 2 - EXECUÇÃO
+Instruções para execução
+
+
+O protótipo foi desenvolvido em Python e utiliza apenas recursos da biblioteca padrão e o unittest, necessitando ter o Python 3 instalado.
+Os arquivos devem estar na mesma pasta, por exemplo: 
+Atendimento.py (classe Atendimento) e SistemaAgendamento.py (classe SistemaAgendamento) e teste.py.
+Para verificar se os arquivos estão sintaticamente corretos, abra o terminal na pasta do projeto e execute:
+	python -m unittest discover -s codigo
+Ou também apenas:
+	python teste.py dentro da pasta código
+Comparação entre o planejamento e a implementação
+A implementação apresentada segue a estrutura prevista no projeto inicial. A classe Atendimento representa cada horário e mantém os atributos de identificação, aluno, disciplina, data e hora e status. O método esta_disponivel verifica se o atendimento está LIVRE, e reservar(id_aluno) altera o status para RESERVADO e associa o identificador do aluno, impedindo uma nova reserva pelo método reservar quando o horário já não está livre.
+A classe SistemaAgendamento mantém os atendimentos em um dicionário, disponibiliza a lista de disciplinas, permite cadastrar horários, listar horários livres por disciplina, realizar agendamentos e exibir os dados de um atendimento. Os dados também são escritos no arquivo DadosAtendimentos. Assim, as principais operações previstas para a história de usuário estão representadas nas classes fornecidas.
+Uma das diferenças entre o planejamento e a implementação foi a previsão inicial de uma interface gráfica para a visualização do sistema Porém a ideia foi descartada devido a falta de informação sobre o código não poder possuir nenhum tipo de input ou interface para poder aplicar os testes. Portanto o código teve que ser adaptado para poder não depender de tais ferramentas.
+
 3 - AUTOAVALIAÇÃO
+
+Foi um projeto bem interessante. Aprendemos sobre o unittest, algo que nunca tinhamos usado antes. Também foi importante para melhorarmos nossa percepção de trabalho e ajustar o planejamento. Pois no planejamento inicial pensamos em muitas coisas, até mesmo em desenvolver parte das demais histórias de usuário e quase não deu tempo de finalizar uma história de usuário. Sem dúvidas foi muito útil para melhorarmos para o projeto final da disciplina.
+Houveram mudanças também no cronograma, devido a uma viagem que fiz a trabalho na segunda e terça atrasei em um dia a finalização dos testes.
 
